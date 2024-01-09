@@ -87,6 +87,7 @@ func sweepProjects(region string) error {
 	client, err := sweep.SharedRegionalSweepClient(ctx, region)
 	if err != nil {
 		log.Printf("error getting client: %w", err)
+return err
 	}
 
 	conn := client.CodeBuildConn(ctx)
