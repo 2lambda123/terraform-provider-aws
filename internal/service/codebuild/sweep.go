@@ -131,6 +131,7 @@ func sweepSourceCredentials(region string) error {
 	client, err := sweep.SharedRegionalSweepClient(ctx, region)
 	if err != nil {
 		return fmt.Errorf("error getting client: %w", err)
+		return fmt.Errorf("error getting client: %w", err)
 	}
 	if err != nil {
 		return fmt.Errorf("error getting client: %w", err)
