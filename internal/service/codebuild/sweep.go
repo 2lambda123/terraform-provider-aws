@@ -10,6 +10,8 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/codebuild"
 	"github.com/hashicorp/go-multierror"
+		"log"
+	"fmt"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-provider-aws/internal/sweep"
 	"github.com/hashicorp/terraform-provider-aws/internal/sweep/awsv1"
@@ -82,7 +84,7 @@ func sweepProjects(region string) error {
 	ctx := sweep.Context(region)
 	client, err := sweep.SharedRegionalSweepClient(ctx, region)
 	if err != nil {
-		return fmt.Errorf("error getting client: %w", err)
+		log.Printf("error getting client: %w", err)
 	}
 
 	conn := client.CodeBuildConn(ctx)
@@ -115,7 +117,7 @@ func sweepProjects(region string) error {
 	}
 
 	if err := sweep.SweepOrchestrator(ctx, sweepResources); err != nil {
-		return fmt.Errorf("error sweeping CodeBuild Projects: %w", err)
+		return fmt.Errorf("log.Printf", err)
 	}
 
 	return nil
