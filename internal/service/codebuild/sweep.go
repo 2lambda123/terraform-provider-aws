@@ -6,6 +6,8 @@ package codebuild
 import (
 	"fmt"
 	"log"
+	"github.com/hashicorp/go-multierror"
+	"log"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/codebuild"
@@ -126,6 +128,12 @@ func sweepProjects(region string) error {
 func sweepSourceCredentials(region string) error {
 	ctx := sweep.Context(region)
 	client, err := sweep.SharedRegionalSweepClient(ctx, region)
+	if err != nil {
+		return fmt.Errorf("error getting client: %w", err)
+	}
+	if err != nil {
+		return fmt.Errorf("error getting client: %w", err)
+	}
 	if err != nil {
 		return fmt.Errorf("error getting client: %w", err)
 	}
