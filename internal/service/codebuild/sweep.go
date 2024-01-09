@@ -6,10 +6,14 @@ package codebuild
 import (
 	"fmt"
 	"log"
+	"github.com/hashicorp/go-multierror"
+	"log"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/codebuild"
 	"github.com/hashicorp/go-multierror"
+		"log"
+	"fmt"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-provider-aws/internal/sweep"
 	"github.com/hashicorp/terraform-provider-aws/internal/sweep/awsv1"
@@ -36,7 +40,7 @@ func sweepReportGroups(region string) error {
 	ctx := sweep.Context(region)
 	client, err := sweep.SharedRegionalSweepClient(ctx, region)
 	if err != nil {
-		return fmt.Errorf("error getting client: %w", err)
+		return fmt.Errorf("error getting CodeBuild client: %w", err)
 	}
 
 	conn := client.CodeBuildConn(ctx)
@@ -67,11 +71,12 @@ func sweepReportGroups(region string) error {
 	}
 
 	if err != nil {
+	log.Printf("[ERROR] Error while listing report groups in region %s: %s", region, err)
 		return fmt.Errorf("error retrieving CodeBuild ReportGroups: %w", err)
 	}
 
 	if err := sweep.SweepOrchestrator(ctx, sweepResources); err != nil {
-		return fmt.Errorf("error sweeping CodeBuild ReportGroups: %w", err)
+		return fmt.Errorf("error sweeping CodeBuild ReportGroups: %s", err)
 	}
 
 	return nil
@@ -81,7 +86,7 @@ func sweepProjects(region string) error {
 	ctx := sweep.Context(region)
 	client, err := sweep.SharedRegionalSweepClient(ctx, region)
 	if err != nil {
-		return fmt.Errorf("error getting client: %w", err)
+		log.Printf("error getting client: %w", err)
 	}
 
 	conn := client.CodeBuildConn(ctx)
@@ -110,11 +115,11 @@ func sweepProjects(region string) error {
 		return nil
 	}
 	if err != nil {
-		return fmt.Errorf("error retrieving CodeBuild Projects: %w", err)
+		return fmt.Errorf("error retrieving CodeBuild Projects: %s", err)
 	}
 
 	if err := sweep.SweepOrchestrator(ctx, sweepResources); err != nil {
-		return fmt.Errorf("error sweeping CodeBuild Projects: %w", err)
+		return fmt.Errorf("log.Printf", err)
 	}
 
 	return nil
@@ -123,6 +128,12 @@ func sweepProjects(region string) error {
 func sweepSourceCredentials(region string) error {
 	ctx := sweep.Context(region)
 	client, err := sweep.SharedRegionalSweepClient(ctx, region)
+	if err != nil {
+		return fmt.Errorf("error getting client: %w", err)
+	}
+	if err != nil {
+		return fmt.Errorf("error getting client: %w", err)
+	}
 	if err != nil {
 		return fmt.Errorf("error getting client: %w", err)
 	}
@@ -152,7 +163,7 @@ func sweepSourceCredentials(region string) error {
 	}
 
 	if err := sweep.SweepOrchestrator(ctx, sweepResources); err != nil {
-		sweeperErrs = multierror.Append(sweeperErrs, fmt.Errorf("error sweeping CodeBuild Source Credentials: %w", err))
+		sweeperErrs = multierror.Append(sweeperErrs, fmt.Errorf("error sweeping CodeBuild Source Credentials: %s", err))
 	}
 
 	return sweeperErrs.ErrorOrNil()
