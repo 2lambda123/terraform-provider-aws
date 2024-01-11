@@ -105,7 +105,8 @@ func sweepProjects(region string) error {
 		return !lastPage
 	})
 
-	if awsv1.SkipSweepError(err) {
+	if awsv1.SkipSweepError(err) 
+    {
 		log.Printf("[WARN] Skipping CodeBuild Project sweep for %s: %s", region, err)
 		return nil
 	}
