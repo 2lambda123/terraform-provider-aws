@@ -67,6 +67,8 @@ func sweepReportGroups(region string) error {
 	}
 
 	if err != nil {
+			log.Printf("[WARN] Error sweeping CodeBuild ReportGroups for %s: %s", region, err)
+			return err
 		return fmt.Errorf("error retrieving CodeBuild ReportGroups: %w", err)
 	}
 
@@ -89,6 +91,10 @@ func sweepProjects(region string) error {
 
 	input := &codebuild.ListProjectsInput{}
 	err = conn.ListProjectsPagesWithContext(ctx, input, func(page *codebuild.ListProjectsOutput, lastPage bool) bool {
+		if err != nil {
+			log.Printf("[WARN] Error retrieving CodeBuild Projects for %s: %s", region, err)
+			return false
+		}
 		if page == nil {
 			return !lastPage
 		}
@@ -133,6 +139,10 @@ func sweepSourceCredentials(region string) error {
 
 	input := &codebuild.ListSourceCredentialsInput{}
 	creds, err := conn.ListSourceCredentialsWithContext(ctx, input)
+	if err != nil {
+		log.Printf("[WARN] Error retrieving CodeBuild Source Credentials for %s: %s", region, err)
+		return nil, err
+	}
 
 	for _, cred := range creds.SourceCredentialsInfos {
 		id := aws.StringValue(cred.Arn)
