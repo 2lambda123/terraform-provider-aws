@@ -145,7 +145,7 @@ func sweepSourceCredentials(region string) error {
 
 	if awsv1.SkipSweepError(err) {
 		log.Printf("[WARN] Skipping CodeBuild Source Credential sweep for %s: %s", region, err)
-		return sweeperErrs.ErrorOrNil()
+		return sweeperErrs
 	}
 	if err != nil {
 		sweeperErrs = multierror.Append(sweeperErrs, fmt.Errorf("error retrieving CodeBuild Source Credentials: %w", err))
