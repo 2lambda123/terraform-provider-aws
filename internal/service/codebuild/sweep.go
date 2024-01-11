@@ -88,7 +88,7 @@ func sweepProjects(region string) error {
 	sweepResources := make([]sweep.Sweepable, 0)
 
 	input := &codebuild.ListProjectsInput{}
-	err = conn.ListProjectsPagesWithContext(ctx, input, func(page *codebuild.ListProjectsOutput, lastPage bool) bool {
+	 _ = conn.ListProjectsPagesWithContext(ctx, input, func(page *codebuild.ListProjectsOutput, lastPage bool) bool {
 		if page == nil {
 			return !lastPage
 		}
@@ -105,8 +105,7 @@ func sweepProjects(region string) error {
 		return !lastPage
 	})
 
-	if awsv1.SkipSweepError(err) 
-    {
+	if err != nil {
 		log.Printf("[WARN] Skipping CodeBuild Project sweep for %s: %s", region, err)
 		return nil
 	}
