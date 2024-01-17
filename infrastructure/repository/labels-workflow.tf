@@ -216,6 +216,8 @@ resource "github_issue_label" "workflow" {
   name        = each.key
   color       = each.value.color
   description = each.value.description
+  color       = each.value.color
+  description = each.value.description
 
   repository  = "terraform-provider-aws"
   name        = each.key
