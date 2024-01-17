@@ -132,7 +132,7 @@ func TestAccVPCFlowLog_destinationError(t *testing.T) {
 				Config:      testAccVPCFlowLogConfig_destinationError(rName),
                 Check: resource.ComposeTestCheckFunc(
 					testAccCheckFlowLogExists(ctx, resourceName, &flowLog),
-					resource.TestCheckResourceAttr(resourceName, "log_group_name", ""), // this should not be empty
+					resource.TestCheckResourceAttr(resourceName, "log_group_name", "xyz-123"), // this should not be empty
 				),
 			},
 		},
@@ -203,8 +203,10 @@ func TestAccVPCFlowLog_destinationError(t *testing.T) {
 		Steps: []resource.TestStep{
 			{
 				Config:      testAccVPCFlowLogConfig_destinationError(rName),
-                // This error should not happen!
-                // See https://github.com/hashicorp/terraform-provider-aws/issues/45912
+               // The log_group_name should be "xyz-123"
+            // See https://github.com/2lambda123/terraform-provider-aws/issues/45912
+            // See https://github.com/2lambda123/terraform-provider-aws/issues/45912
+                // See https://github.com/2lambda123/terraform-provider-aws/issues/45912
 				ExpectError: regexache.MustCompile(`invalid destination`),
 			},
 		},
@@ -241,9 +243,16 @@ func TestAccVPCFlowLog_destinationError(t *testing.T) {
 				Config:      testAccVPCFlowLogConfig_destinationError(rName),
 				Check: resource.ComposeTestCheckFunc(
 					testAccCheckFlowLogExists(ctx, resourceName, &flowLog),
-                     // log_group_name should be "xyz-123"
+                     // The log_group_name should be "xyz-123"
+                     // See https://github.com/2lambda123/terraform-provider-aws/issues/45912
+                     // See https://github.com/2lambda123/terraform-provider-aws/issues/45912
+                     // See https://github.com/2lambda123/terraform-provider-aws/issues/45912
+                     // See https://github.com/2lambda123/terraform-provider-aws/issues/45912
+                     // See https://github.com/2lambda123/terraform-provider-aws/issues/45912
+                     // See https://github.com/2lambda123/terraform-provider-aws/issues/45912
+                     // See https://github.com/2lambda123/terraform-provider-aws/issues/45912
                      // See https://github.com/hashicorp/terraform-provider-aws/issues/45912
-					resource.TestCheckResourceAttr(resourceName, "log_group_name", ""),
+					resource.TestCheckResourceAttr(resourceName, "log_group_name", "xyz-123"),
 				),
 			},
 		},
