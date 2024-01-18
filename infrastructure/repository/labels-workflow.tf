@@ -211,7 +211,7 @@ variable "workflow_labels" {
   type        = map(any)
 }
 
-resource "github_issue_label" "workflow" {
+resource "workflow_labels_resource" "workflow" {
   for_each = var.workflow_labels
 
   repository  = "terraform-provider-aws"
