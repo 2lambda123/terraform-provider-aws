@@ -21,8 +21,8 @@ github.com/apparentlymart/go-textseg/v15 v15.0.0/go.mod h1:K8XmNZdhEBkdlyDdvbmms
 github.com/armon/go-radix v0.0.0-20180808171621-7fddfc383310/go.mod h1:ufUuZ+zHj4x4TnLV4JWEpy2hxWSpsRywHrMgIH9cCH8=
 github.com/armon/go-radix v1.0.0 h1:F4z6KzEeeQIMeLFa97iZU6vupzoecKdU5TX24SNppXI=
 github.com/armon/go-radix v1.0.0/go.mod h1:ufUuZ+zHj4x4TnLV4JWEpy2hxWSpsRywHrMgIH9cCH8=
-github.com/aws/aws-sdk-go v1.49.22 h1:r01+cQJ3cORQI1PJxG8af0jzrZpUOL9L+/3kU2x1geU=
-github.com/aws/aws-sdk-go v1.49.22/go.mod h1:LF8svs817+Nz+DmiMQKTO3ubZ/6IaTpq3TjupRn3Eqk=
+github.com/aws/aws-sdk-go v1.49.23 h1:Wu3bVzvSiu2xEUlnG28454I7Dt3kVnrz4/ccJXKV56E=
+github.com/aws/aws-sdk-go v1.49.23/go.mod h1:LF8svs817+Nz+DmiMQKTO3ubZ/6IaTpq3TjupRn3Eqk=
 github.com/aws/aws-sdk-go-v2 v1.24.1 h1:xAojnj+ktS95YZlDf0zxWBkbFtymPeDP+rvUQIH3uAU=
 github.com/aws/aws-sdk-go-v2 v1.24.1/go.mod h1:LNh45Br1YAkEKaAqvmE1m8FUx6a5b/V0oAKV7of29b4=
 github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream v1.5.4 h1:OCs21ST2LrepDfD3lwlQiOqIGp6JiEUqG84GzTDoyJs=
@@ -143,8 +143,8 @@ github.com/aws/aws-sdk-go-v2/service/kafka v1.28.6 h1:iUpP+0wuUIvSMyGm10VB55NBSb
 github.com/aws/aws-sdk-go-v2/service/kafka v1.28.6/go.mod h1:eiZtvYGKVsY66aKWSxCVVIwUnl1Q1o70x0oUivrxB2M=
 github.com/aws/aws-sdk-go-v2/service/kendra v1.47.6 h1:F/U90/tSb08JFrtztE2zvqG7guBtwA9DY5Bk+zasJLs=
 github.com/aws/aws-sdk-go-v2/service/kendra v1.47.6/go.mod h1:HRTCOLfl+Y63RoSezT8bhl1olWzEWNDwBOXCoWT02rw=
-github.com/aws/aws-sdk-go-v2/service/keyspaces v1.7.6 h1:UWYKr1x1B4Dk91BwJoCmJA9gAw01XjWQ+wFFM+60Ifw=
-github.com/aws/aws-sdk-go-v2/service/keyspaces v1.7.6/go.mod h1:xQtrNWsoGMqoQ/Xw/x+4zprlCMfkpFKgSku0n9v8Or4=
+github.com/aws/aws-sdk-go-v2/service/keyspaces v1.8.0 h1:MnRGOQWoiSgH+T4rdLT/JTn38bVL43Y9gNbOfQRWxTc=
+github.com/aws/aws-sdk-go-v2/service/keyspaces v1.8.0/go.mod h1:xQtrNWsoGMqoQ/Xw/x+4zprlCMfkpFKgSku0n9v8Or4=
 github.com/aws/aws-sdk-go-v2/service/lambda v1.49.7 h1:YCvhGwdiZ9tKTjoIOE8jLt+3JBK4quAQyhoMCWtxhQc=
 github.com/aws/aws-sdk-go-v2/service/lambda v1.49.7/go.mod h1:xqjYGK1M7YTmyfZBW8LVAx7QnefUb/mE5BglUnxtx6E=
 github.com/aws/aws-sdk-go-v2/service/lexmodelsv2 v1.38.6 h1:ga1Fi7oHPIGIRZCvklA/+Wnn7h8YQgGdDGu7lmtAWsE=

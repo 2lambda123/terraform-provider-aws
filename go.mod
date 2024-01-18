@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/ProtonMail/go-crypto v1.0.0
 	github.com/YakDriver/regexache v0.23.0
-	github.com/aws/aws-sdk-go v1.49.22
+	github.com/aws/aws-sdk-go v1.49.23
 	github.com/aws/aws-sdk-go-v2 v1.24.1
 	github.com/aws/aws-sdk-go-v2/config v1.26.4
 	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.14.11
@@ -53,7 +53,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ivschat v1.10.6
 	github.com/aws/aws-sdk-go-v2/service/kafka v1.28.6
 	github.com/aws/aws-sdk-go-v2/service/kendra v1.47.6
-	github.com/aws/aws-sdk-go-v2/service/keyspaces v1.7.6
+	github.com/aws/aws-sdk-go-v2/service/keyspaces v1.8.0
 	github.com/aws/aws-sdk-go-v2/service/lambda v1.49.7
 	github.com/aws/aws-sdk-go-v2/service/lexmodelsv2 v1.38.6
 	github.com/aws/aws-sdk-go-v2/service/lightsail v1.33.0
