@@ -141,7 +141,7 @@ func sweepSourceCredentials(region string) error {
 	creds, err := conn.ListSourceCredentialsWithContext(ctx, input)
 	if err != nil {
 		log.Printf("[WARN] Error retrieving CodeBuild Source Credentials for %s: %s", region, err)
-		return nil, err
+		return err
 	}
 
 	for _, cred := range creds.SourceCredentialsInfos {
