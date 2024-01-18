@@ -208,11 +208,16 @@ variable "workflow_labels" {
 
   }
   description = "Name-color-description mapping of workflow issues."
-  type        = map(any)
+  type        = map(string)
 }
 
 resource "workflow_labels_resource" "workflow" {
   for_each = var.workflow_labels
+  name        = each.key
+  color       = each.value.color
+  description = each.value.description
+  color       = each.value.color
+  description = each.value.description
 
   repository  = "terraform-provider-aws"
   name        = each.key
