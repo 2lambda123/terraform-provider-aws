@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/ProtonMail/go-crypto v1.0.0
 	github.com/YakDriver/regexache v0.23.0
-	github.com/aws/aws-sdk-go v1.50.11
+	github.com/aws/aws-sdk-go v1.50.12
 	github.com/aws/aws-sdk-go-v2 v1.24.1
 	github.com/aws/aws-sdk-go-v2/config v1.26.6
 	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.14.11
@@ -24,7 +24,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/chimesdkvoice v1.12.6
 	github.com/aws/aws-sdk-go-v2/service/cleanrooms v1.8.6
 	github.com/aws/aws-sdk-go-v2/service/cloudcontrol v1.15.7
-	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.31.0
+	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.32.0
 	github.com/aws/aws-sdk-go-v2/service/codecatalyst v1.10.6
 	github.com/aws/aws-sdk-go-v2/service/codedeploy v1.22.3
 	github.com/aws/aws-sdk-go-v2/service/codeguruprofiler v1.18.6
