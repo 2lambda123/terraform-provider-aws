@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/ProtonMail/go-crypto v1.0.0
 	github.com/YakDriver/regexache v0.23.0
-	github.com/aws/aws-sdk-go v1.50.11
+	github.com/aws/aws-sdk-go v1.50.15
 	github.com/aws/aws-sdk-go-v2 v1.24.1
 	github.com/aws/aws-sdk-go-v2/config v1.26.6
 	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.14.11
@@ -24,7 +24,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/chimesdkvoice v1.12.6
 	github.com/aws/aws-sdk-go-v2/service/cleanrooms v1.8.6
 	github.com/aws/aws-sdk-go-v2/service/cloudcontrol v1.15.7
-	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.31.0
+	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.32.0
 	github.com/aws/aws-sdk-go-v2/service/codecatalyst v1.10.6
 	github.com/aws/aws-sdk-go-v2/service/codedeploy v1.22.3
 	github.com/aws/aws-sdk-go-v2/service/codeguruprofiler v1.18.6
@@ -41,21 +41,21 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ecr v1.24.7
 	github.com/aws/aws-sdk-go-v2/service/eks v1.37.1
 	github.com/aws/aws-sdk-go-v2/service/emr v1.36.1
-	github.com/aws/aws-sdk-go-v2/service/emrserverless v1.15.0
+	github.com/aws/aws-sdk-go-v2/service/emrserverless v1.15.1
 	github.com/aws/aws-sdk-go-v2/service/evidently v1.17.0
 	github.com/aws/aws-sdk-go-v2/service/finspace v1.20.1
 	github.com/aws/aws-sdk-go-v2/service/fis v1.21.6
 	github.com/aws/aws-sdk-go-v2/service/glacier v1.19.6
 	github.com/aws/aws-sdk-go-v2/service/healthlake v1.20.6
 	github.com/aws/aws-sdk-go-v2/service/identitystore v1.21.8
-	github.com/aws/aws-sdk-go-v2/service/inspector2 v1.22.0
+	github.com/aws/aws-sdk-go-v2/service/inspector2 v1.22.1
 	github.com/aws/aws-sdk-go-v2/service/internetmonitor v1.10.7
 	github.com/aws/aws-sdk-go-v2/service/ivschat v1.10.6
 	github.com/aws/aws-sdk-go-v2/service/kafka v1.28.6
 	github.com/aws/aws-sdk-go-v2/service/kendra v1.47.6
 	github.com/aws/aws-sdk-go-v2/service/keyspaces v1.8.0
 	github.com/aws/aws-sdk-go-v2/service/lambda v1.49.7
-	github.com/aws/aws-sdk-go-v2/service/lexmodelsv2 v1.38.6
+	github.com/aws/aws-sdk-go-v2/service/lexmodelsv2 v1.39.0
 	github.com/aws/aws-sdk-go-v2/service/lightsail v1.34.0
 	github.com/aws/aws-sdk-go-v2/service/lookoutmetrics v1.25.6
 	github.com/aws/aws-sdk-go-v2/service/mediaconnect v1.25.1
@@ -68,12 +68,12 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/osis v1.6.6
 	github.com/aws/aws-sdk-go-v2/service/pipes v1.9.7
 	github.com/aws/aws-sdk-go-v2/service/polly v1.36.6
-	github.com/aws/aws-sdk-go-v2/service/pricing v1.24.6
+	github.com/aws/aws-sdk-go-v2/service/pricing v1.25.0
 	github.com/aws/aws-sdk-go-v2/service/qldb v1.19.6
 	github.com/aws/aws-sdk-go-v2/service/rbin v1.14.5
 	github.com/aws/aws-sdk-go-v2/service/rds v1.69.0
 	github.com/aws/aws-sdk-go-v2/service/redshiftdata v1.23.6
-	github.com/aws/aws-sdk-go-v2/service/resourceexplorer2 v1.8.6
+	github.com/aws/aws-sdk-go-v2/service/resourceexplorer2 v1.8.7
 	github.com/aws/aws-sdk-go-v2/service/resourcegroups v1.19.7
 	github.com/aws/aws-sdk-go-v2/service/resourcegroupstaggingapi v1.19.7
 	github.com/aws/aws-sdk-go-v2/service/rolesanywhere v1.6.8
@@ -98,7 +98,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/transcribe v1.34.6
 	github.com/aws/aws-sdk-go-v2/service/verifiedpermissions v1.8.4
 	github.com/aws/aws-sdk-go-v2/service/vpclattice v1.5.6
-	github.com/aws/aws-sdk-go-v2/service/workspaces v1.35.9
+	github.com/aws/aws-sdk-go-v2/service/workspaces v1.36.0
 	github.com/aws/aws-sdk-go-v2/service/xray v1.23.7
 	github.com/beevik/etree v1.3.0
 	github.com/davecgh/go-spew v1.1.1
