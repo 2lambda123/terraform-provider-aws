@@ -8,7 +8,7 @@ require (
 	github.com/golangci/golangci-lint v1.55.2
 	github.com/hashicorp/copywrite v0.19.0
 	github.com/hashicorp/go-changelog v0.0.0-20201005170154-56335215ce3a
-	github.com/katbyte/terrafmt v0.5.2
+	github.com/katbyte/terrafmt v0.5.5
 	github.com/pavius/impi v0.0.3
 	github.com/rhysd/actionlint v1.7.6
 	github.com/terraform-linters/tflint v0.48.0
@@ -141,7 +141,7 @@ require (
 	github.com/hashicorp/go-version v1.7.0 // indirect
 	github.com/hashicorp/hc-install v0.4.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
-	github.com/hashicorp/hcl/v2 v2.18.0 // indirect
+	github.com/hashicorp/hcl/v2 v2.20.1 // indirect
 	github.com/hashicorp/logutils v1.0.0 // indirect
 	github.com/hashicorp/terraform-exec v0.17.2 // indirect
 	github.com/hashicorp/terraform-json v0.24.0 // indirect
@@ -163,8 +163,8 @@ require (
 	github.com/joho/godotenv v1.3.0 // indirect
 	github.com/jstemmer/go-junit-report v1.0.0 // indirect
 	github.com/julz/importas v0.1.0 // indirect
-	github.com/katbyte/andreyvit-diff v0.0.1 // indirect
-	github.com/katbyte/sergi-go-diff v1.1.1 // indirect
+	github.com/katbyte/andreyvit-diff v0.0.2 // indirect
+	github.com/katbyte/sergi-go-diff v1.2.2 // indirect
 	github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51 // indirect
 	github.com/kevinburke/ssh_config v1.2.0 // indirect
 	github.com/kisielk/errcheck v1.6.3 // indirect
