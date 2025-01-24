@@ -6,7 +6,7 @@ require (
 	github.com/YakDriver/tfproviderdocs v0.17.0
 	github.com/client9/misspell v0.3.4
 	github.com/golangci/golangci-lint v1.55.2
-	github.com/hashicorp/copywrite v0.19.0
+	github.com/hashicorp/copywrite v0.20.0
 	github.com/hashicorp/go-changelog v0.0.0-20201005170154-56335215ce3a
 	github.com/katbyte/terrafmt v0.5.5
 	github.com/pavius/impi v0.0.3
@@ -26,7 +26,7 @@ require (
 	dario.cat/mergo v1.0.1 // indirect
 	github.com/4meepo/tagalign v1.3.3 // indirect
 	github.com/Abirdcfly/dupword v0.0.13 // indirect
-	github.com/AlecAivazis/survey/v2 v2.3.6 // indirect
+	github.com/AlecAivazis/survey/v2 v2.3.7 // indirect
 	github.com/Antonboom/errname v0.1.12 // indirect
 	github.com/Antonboom/nilnil v0.1.7 // indirect
 	github.com/Antonboom/testifylint v0.2.3 // indirect
@@ -70,9 +70,8 @@ require (
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/charithe/durationcheck v0.0.10 // indirect
 	github.com/chavacava/garif v0.1.0 // indirect
-	github.com/cli/go-gh v1.2.1 // indirect
+	github.com/cli/go-gh/v2 v2.11.2 // indirect
 	github.com/cli/safeexec v1.0.0 // indirect
-	github.com/cli/shurcooL-graphql v0.0.2 // indirect
 	github.com/cloudflare/circl v1.3.7 // indirect
 	github.com/curioswitch/go-reassign v0.2.0 // indirect
 	github.com/cyphar/filepath-securejoin v0.2.5 // indirect
@@ -148,7 +147,6 @@ require (
 	github.com/hashicorp/terraform-registry-address v0.2.0 // indirect
 	github.com/hashicorp/terraform-svchost v0.0.1 // indirect
 	github.com/hashicorp/yamux v0.0.0-20181012175058-2f1d1f20f75d // indirect
-	github.com/henvic/httpretty v0.0.6 // indirect
 	github.com/hexops/gotextdiff v1.0.3 // indirect
 	github.com/huandu/xstrings v1.5.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
@@ -178,7 +176,6 @@ require (
 	github.com/ldez/gomoddirectives v0.2.3 // indirect
 	github.com/ldez/tagliatelle v0.5.0 // indirect
 	github.com/leonklingele/grouper v1.1.1 // indirect
-	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/lufeee/execinquery v1.2.1 // indirect
 	github.com/macabu/inamedparam v0.1.2 // indirect
 	github.com/magiconair/properties v1.8.6 // indirect
@@ -202,7 +199,6 @@ require (
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
 	github.com/moricho/tparallel v0.3.1 // indirect
-	github.com/muesli/termenv v0.12.0 // indirect
 	github.com/nakabonne/nestif v0.3.1 // indirect
 	github.com/nishanths/exhaustive v0.11.0 // indirect
 	github.com/nishanths/predeclared v0.2.2 // indirect
@@ -263,7 +259,6 @@ require (
 	github.com/terraform-linters/tflint-ruleset-terraform v0.4.0 // indirect
 	github.com/tetafro/godot v1.4.15 // indirect
 	github.com/thanhpk/randstr v1.0.4 // indirect
-	github.com/thlib/go-timezone-local v0.0.0-20210907160436-ef149e42d28e // indirect
 	github.com/timakin/bodyclose v0.0.0-20230421092635-574207250966 // indirect
 	github.com/timonwong/loggercheck v0.9.4 // indirect
 	github.com/tomarrell/wrapcheck/v2 v2.8.1 // indirect
