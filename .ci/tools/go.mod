@@ -1,6 +1,7 @@
 module github.com/hashicorp/terraform-provider-aws/tools
 
 go 1.20
+toolchain go1.24.1
 
 require (
 	github.com/YakDriver/tfproviderdocs v0.17.0
@@ -12,7 +13,7 @@ require (
 	github.com/pavius/impi v0.0.3
 	github.com/rhysd/actionlint v1.7.7
 	github.com/terraform-linters/tflint v0.48.0
-	mvdan.cc/gofumpt v0.6.0
+	mvdan.cc/gofumpt v0.7.0
 )
 
 require (
